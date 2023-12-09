@@ -1,4 +1,5 @@
-
+:: Usage:
+:: push_code.bat "[add] add a tool of pushing code"
 set COMMENTS=%1
 
 git status
