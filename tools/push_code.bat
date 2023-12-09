@@ -1,9 +1,17 @@
 :: Usage:
 :: push_code.bat "[add] add a tool of pushing code"
-set COMMENTS=%1
+set REPO_LINK=%1
+REM set BRANCHES=%2
+REM set COMMENTS=%3
 
-git status
-git add .
-git commit -m %COMMENTS%
-git push
-git pull
+:: git clone https://github.com/shangguocan/Learning_Boost.git
+git clone %REPO_LINK%
+
+echo %REPO_LINK%~n0
+
+REM git checkout -b %BRANCHES%
+REM git status
+REM git add .
+REM git commit -m %COMMENTS%
+REM git push
+REM git pull
